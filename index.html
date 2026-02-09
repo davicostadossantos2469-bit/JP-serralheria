@@ -60,6 +60,36 @@
 
     </section>
 
+    <section id="Habilidades">
+
+        <h2>Habilidades e Tecnologias</h2>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>tecnologia</th>
+                    <th>Nível</th>
+                    <th>Descrição</th>
+                </tr>
+            </thead>
+
+            <body>
+
+                <tr>
+                    <td>HTML</td>
+                    <td>Iniciante</td>
+                    <td>Capaz de construir páginas o web semãntica e responsaveis.</td>
+                </tr>
+
+
+
+            </body>
+
+        </table>
+
+    </section>
+
     <footer>
         <p>Direitos reservado a Davi</p>
 
@@ -69,12 +99,37 @@
 
             <p>Tem um projeto em mente?Entre em contato.</p>
 
-            <address>
+            <form action="">
 
-                E-mail: <a href="mailto:user@gmail.com">user@gmail.com</a> <br>
-                Telefone: <a href="tel:(00)0000-0000">(00)0000-0000</a>
+                <label for="Nome">Nome: </label>
+                <input type="text" id="Nome" name="nome" required>
 
-            </address>
+                <label for="e-mail">e-mail: </label>
+                <input type="text" id="e-mail" name="e-mail" required>
+
+                <label for="telefone">telefone: </label>
+                <input type="tel" id="telefone" name="telefone">
+
+                <label for="Assunto">Assunto: </label>
+                <select name="Assunto" id="Assunto" required>
+                    <option value="Orçamento">Orçamento</option>
+                    <option value="Duvida">Duvida</option>
+                    <option value="Outros">Outros</option>
+                </select>
+
+                <br>
+
+                <label for="Messagem">Messagem: </label>
+                <textarea name="Messagem" id="Messagem" cols="30" rows="10"></textarea>
+
+                <input type="checkbox" id="inscricao" name="inscricao">
+                <label for="inscricao">Deseja receber mais detalhes.</label>
+
+                <br>
+
+                <input type="submit" value="Enviar Pedido">
+
+            </form>
 
 
         </section>
